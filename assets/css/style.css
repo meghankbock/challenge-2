@@ -146,14 +146,13 @@ header nav ul li a:hover {
     margin-right: 10px;
 }
 
-.primary-item {
+.primary-item, .resume-img {
     width: 100%;
     display: inline-flex;
     position: relative;
-    cursor:pointer;
 }
 
-.primary-work img, .secondary-work img {
+.primary-work img, .secondary-work img, .resume-img img {
     max-width: 100%;
     box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
@@ -172,11 +171,59 @@ header nav ul li a:hover {
     height: 100%;
     background-color: rgba(245,245,245,0.75);
     border: 2px solid var(--yellow);
-    color: var(--green);
+    color: var(--gold);
     font-size: 100%;
     font-weight: bolder;
     padding-top: 15%;
     text-align: center;
+}
+
+.resume {
+    background-color: var(--pink);
+    padding-bottom: 50px;
+}
+
+.resume h2 {
+    font-size: 42px;
+    color: var(--white);
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+    flex: 15;
+}
+
+.resume-info {
+    flex: 1%;
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.under-construction {
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    transform: translateY(-50%);
+    width: 50%;
+    background-color: var(--yellow);
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    color: black;
+    font-size: 100%;
+    font-weight: bolder;
+    text-align: center;
+    padding: 20px;
+}
+
+.resume-img img {
+    max-width: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin: auto;
 }
 
 .flex-row {
