@@ -70,11 +70,12 @@ header nav ul li a:hover {
 .about-me {
     background-image: url("../images/background-multi-color-wood.jpg");
     background-size: cover;
-    background-position: 80%;
+    background-position: 10%;
+    padding-bottom: 100px;
 }
 
 .about-me h2 {
-    font-size: 36px;
+    font-size: 42px;
     color: var(--white);
     text-shadow: 0 0 10px rgba(0,0,0,0.5);
     margin-top: 100px;
@@ -109,6 +110,73 @@ header nav ul li a:hover {
     flex: 12;
     padding: 25px;
     line-height: 1.3;
+}
+
+.work {
+    background-color: var(--gold);
+    padding-bottom: 50px;
+}
+
+.work h2 {
+    font-size: 42px;
+    color: var(--white);
+    text-shadow: 0 0 10px rgba(0,0,0,0.5);
+    margin-top: 100px;
+    text-align: center;
+    width: 100%;
+}
+
+.work-info {
+    width: 80%;
+    margin: 50px auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.primary-work {
+    flex: 12 100%;
+    margin-right: 10px;
+}
+
+.secondary-work {
+    flex: 1 40%;
+    margin-right: 10px;
+}
+
+.primary-item {
+    width: 100%;
+    display: inline-flex;
+    position: relative;
+    cursor:pointer;
+}
+
+.primary-work img, .secondary-work img {
+    max-width: 100%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
+
+.work-text {
+    display: none;
+}
+
+.primary-item:hover > .work-text {
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    background-color: rgba(245,245,245,0.75);
+    border: 2px solid var(--yellow);
+    color: var(--green);
+    font-size: 100%;
+    font-weight: bolder;
+    padding-top: 15%;
+    text-align: center;
 }
 
 .flex-row {
