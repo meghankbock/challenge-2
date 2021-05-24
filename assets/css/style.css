@@ -195,13 +195,13 @@ body{
     left: 0;
     top: 50%;
     transform: translateY(-50%); 
-    font-size: 100%;  
+    font-size: 20px;  
     color: var(--green); 
     text-align: center;
     text-decoration: none;
     background-color: rgba(245,245,245,0.90);
     border: 3px solid var(--yellow);
-    padding: 20% 15px;
+    padding: 20px 15px;
 }
 
 /* RESUME STYLES */
@@ -229,6 +229,7 @@ body{
 /* CONTACT ME STYLES */
 .contact-item, .contact-item a {
     color: var(--green);
+    font-size: 24px;
     font-weight: bolder;
     text-decoration: none;
     border-bottom: 2px solid var(--white);
@@ -269,13 +270,17 @@ body{
         width: 100%;
     }
 
-    section, article {
+    section {
+        padding: 10px 10px;
+    }
+
+    article {
         padding: 20px 10px;
     }
 
     .section-info {
         width: 95%;
-        padding: 20px;
+        padding: 10px;
     }
 
     .primary-section-title, .secondary-section-title {
@@ -305,19 +310,19 @@ body{
 }
 
 @media screen and (max-width: 768px) {
-    section, article {
-        padding: 20px 10px;
+    section {
+        padding: 5px 10px;
     }
 
-    .section-info {
-        width: 95%;
-        padding: 20px;
+    article {
+        padding: 10px 10px;
     }
     
     .bio-img, .bio-text {
         flex: 0 80%;
         padding: 20px 10px;
         margin-left: auto;
+        margin-right: 0;
         align-items: center;
     }
     .bio-text {
@@ -327,20 +332,20 @@ body{
     }
 
     .bio-img img {
-        max-width: 80%;
+        max-width: 70%;
     }
 }
 
 @media screen and (max-width: 575px) {
-    .primary-section-title, .secondary-section-title {
-        width: 95%;
+    section {
+        padding: 0 10px;
+    }
+
+    article {
+        padding: 5px 10px;
     }
 
     .contact-item {
-        text-align: center;
-    }
-
-    .contact-item {
-        flex: 0 100%;
+        padding: 5px;
     }
 }
